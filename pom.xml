@@ -61,5 +61,15 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<!-- adding nexus code -->
+	<distributionManagement>
+		<repository>
+			<id>myprojectrepo</id>
+			<url>http://localhost:8082/rajasekhar/repository/myprojectrepo/</url>
+		</repository>
+		<snapshotRepository>
+			<id>testrepo</id>
+			<url>http://localhost:8082/rajasekhar/repository/testrepo/</url>
+		</snapshotRepository>
+</distributionManagement>
 </project>
